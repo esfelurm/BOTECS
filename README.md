@@ -34,6 +34,6 @@
 Download the tool, then open the botnet file and enter the Telegram bot token in line 7, then in line 8 enter the numerical ID of the account/group/channel so that it is activated there. 
 Botnet is upgradeable and you can upgrade it and make it available to people 
 
-<a href="Joinhttps://t.me/KnightGuardian59"> Telegram channel to buy tools</a>
+<a href="https://t.me/KnightGuardian59"> join Telegram channel to buy tools</a>
 
 Good luck 
