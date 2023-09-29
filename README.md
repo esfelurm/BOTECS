@@ -6,7 +6,7 @@
 - With this tool, you can hunt and attack Windows and Linux bots
 
 ## ScreenShot Bot
-<img src="screenshot/bot.jpg">
+<img src="screenshot/bot2.jpg">
  
 
 ## Required libraries 
