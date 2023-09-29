@@ -1,7 +1,7 @@
 # BotEcs
 <img src="screenshot/logo.jpg">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=31&duration=4500&pause=1000&color=RED&multiline=true&width=453&height=100&lines=BOTECS)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=31&duration=4500&pause=1000&color=RED&multiline=true&width=453&height=100&lines=Botnet+BOTECS)](https://git.io/typing-svg)
 
 ## Brief explanation 
 - Botnet connected to Telegram bot for DDOS attacks
