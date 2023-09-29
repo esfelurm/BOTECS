@@ -17,8 +17,7 @@
 - win32gui
 - win32con
 - telfhk0
-- telepot
-- TeleBot
+- requests
 ---------------------------------
 
 ## Support from 
@@ -28,6 +27,7 @@
   8 ✅
   10 ✅
   ]
+- Android ✅
 
 ## Description 
 
