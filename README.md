@@ -23,7 +23,11 @@
 
 ## Support from 
 - Linux ✅
-- Windows 7/8/10
+- Windows [
+  7 ✅
+  8 ✅
+  10 ✅
+  ]
 
 ## Description 
 
