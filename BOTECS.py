@@ -4,8 +4,8 @@
 # Broadcasting channel Telegram : @Team_Exploit
 # Tool Vip BotECS In channel : @KnightGuardian59
 
-token = ' Insert your bot token  '
-chat_id = 'Insert your account chat id ' 
+token = ' Your bot token  '
+chat_id = 'Your account chat id ' 
 
 from os import system
 from platform import (system,platform)
