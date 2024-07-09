@@ -4,11 +4,10 @@
 # Broadcasting channel Telegram : @Team_Exploit
 # Tool Vip BotECS In channel : @KnightGuardian59
 
-token = ' Insert your bot token  '
-chat_id = 'Insert your account chat id ' 
+token = ' 6076127022  '
+chat_id = '6389761777:AAH7Oongir9KO9IGa1spei7MQS5tkgrCBZ4 ' 
 
-from os import system
-from platform import (system,platform)
+from os import (system,platform)
 import sys
 from bs4 import BeautifulSoup as Soup
 from re import findall
